@@ -10,13 +10,18 @@ class GamesRow extends React.Component{
          if(this.props.platforms != null )
          {
            
-            
-           { this.props.platforms.map((platform, index) => (
-                <li key={index}>{platform.platform.name}</li> 
+           return ( 
+             <div>
+            { this.props.platforms.map((platform, index) => (
+               <li key={index}>{platform.platform.name}</li> 
             ))}
+            </div>
+           )
          
         }
      }
+
+     
     
 
     render(){
