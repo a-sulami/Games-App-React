@@ -13,7 +13,8 @@ function App() {
         <Home></Home>
         <Contact></Contact>
         <Games></Games>
-        
+        <Search></Search>
+
     </div>
   );
 }
