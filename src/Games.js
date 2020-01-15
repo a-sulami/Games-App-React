@@ -3,10 +3,12 @@ import './App.css';
 import GamesRow from './GamesRow';
 import $ from 'jquery'
 
-class App extends Component{
+class Games extends Component{
   constructor(props){
     super(props);
-    this.state = {}
+    this.state = {
+        rows: []
+    }
     
 
     this.performSearch("")
@@ -26,6 +28,7 @@ class App extends Component{
           // console.log(game.poster_path)
           const gameRow = <GamesRow key = {game.id} game = {game} platforms={game.platforms}/>
           gameRows.push(gameRow)
+          console.log(gameRows)
           
         })
 
@@ -77,4 +80,4 @@ class App extends Component{
   }
 }
 
-export default App;
+export default Games;
