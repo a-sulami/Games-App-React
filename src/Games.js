@@ -15,7 +15,7 @@ class Games extends Component{
   }
 
   performSearch(searchTerm){
-    const urlString = "https://api.rawg.io/api/games?page_size=11&search=" + searchTerm
+    const urlString = "https://api.rawg.io/api/games?dates=2019-01-01,2019-12-30"
     $.ajax({
       url: urlString,
       success: (searchResults) => {
@@ -40,12 +40,12 @@ class Games extends Component{
     })
   }
 
-  searchChangeHandler(event){
-    console.log(event.target.value)
-    const boundObject = this
-    const searchTerm = event.target.value
-    boundObject.performSearch(searchTerm)
-  }
+//   searchChangeHandler(event){
+//     console.log(event.target.value)
+//     const boundObject = this
+//     const searchTerm = event.target.value
+//     boundObject.performSearch(searchTerm)
+//   }
 
   render(){
     return(
@@ -64,14 +64,7 @@ class Games extends Component{
           </tbody>
         </table>
 
-        <input style={{
-          fontSize: 24,
-          display: 'block',
-          width: "99%",
-          paddingTop: 8,
-          paddingBottom: 8,
-          paddingLeft: 16
-        }} onChange={this.searchChangeHandler.bind(this)} placeholder="Enter Search term"/>
+
 
         {this.state.rows}
 

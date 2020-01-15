@@ -3,24 +3,27 @@ import $ from 'jquery';
 import Game from './Game';
 
 class GamesRow extends React.Component{
+  
   constructor(props){
     super(props);
     this.state = {
-      rows: {}
+      rows: {},
+      //noOfClicks: 0
       //gameInfo: []//differ
     }
   }
+  
     viewgame(){
+      
+      //noOfClicks +=1;
+      //if(noOfClicks % 2 == 0){
         const gameUrl = "https://api.rawg.io/api/games/" + this.props.game.id
         $.ajax({
           url: gameUrl,
           success: (infoResult) => {
               console.log("Fetched data successfully")
               let result = infoResult
-              // var gameInfo = []
-              // result.poster_src = result.background_image
               console.log(infoResult)
-              // console.log(result.poster_path)
               // const infoRow = <Game key = {result.id} platforms={result.platforms} rating={result.rating}/>
               //<Game key = {this.state.rows.id} released = {this.state.rows.released} top = {this.state.rows.toprating} name = {this.state.rows.name} platforms={this.state.rows.platforms} rating={this.state.rows.rating}/>
 
@@ -30,29 +33,19 @@ class GamesRow extends React.Component{
                 {
                   rows: infoResult
                 })
-                // return(
-                //   <Game key = {this.state.rows.id} released = {this.state.rows.released} top = {this.state.rows.toprating} name = {this.state.rows.name} platforms={this.state.rows.platforms} rating={this.state.rows.rating}/>
-
-                // )
           },
             error: (xhr, status, err) => {
               console.error("Faild to fetch data")
             }
-      })
+        })
+      //}
     }
-    
-   check=()=>{
-       if(this.props.platforms != null )
-       {
-         return ( 
-           <div>
-          { this.props.platforms.map((platform, index) => (
-             <li key={index}>{platform.platform.name}</li> 
-          ))}
-          </div>
-         )
-      }
-   }
+  //  $(document).ready(function(){
+  //   $(".view").click(function(){
+  //     $(".game_table").toggle();
+  //   });
+  // });
+
   render(){
    console.log(this.state.rows)
       return (
@@ -66,13 +59,12 @@ class GamesRow extends React.Component{
             <h3>{this.props.game.name}</h3>
             <p>Release Date: {this.props.game.released}</p>           
             <p>Rating: {this.props.game.rating} / {this.props.game.rating_top}</p>
-              <ul>{this.check()}</ul>
+              {/* <ul>{this.check()}</ul> */}
 
-            <button onClick = {this.viewgame.bind(this)} >View</button>
+            <button class='view' onClick = {this.viewgame.bind(this)} >More Info</button>
               <div> 
-              <Game key = {this.state.rows.id} released = {<p>hello</p>&&this.state.rows.released} top = {this.state.rows.toprating} name = {this.state.rows.name} platforms={this.state.rows.platforms} rating={this.state.rows.rating}/>
+              <Game key = {this.state.rows.id} platforms = {this.state.rows.platforms} ratings = {this.state.rows.ratings} suggestions={this.state.rows.suggestions_count} released = {this.state.rows.released} top = {this.state.rows.toprating} name = {this.state.rows.name} platforms={this.state.rows.platforms} rating={this.state.rows.rating}/>
               </div>
-
           </td>
         </tr> 
       </tbody>

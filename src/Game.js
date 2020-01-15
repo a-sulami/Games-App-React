@@ -7,45 +7,63 @@ class Game extends Component{
           //gameInfo: []//differ
         }
       }
-    // check=()=>{
-    //     if(this.props.platforms != null )
-    //     {
-    //       return ( 
-    //         <div>
-    //        { this.props.platforms.map((platform, index) => (
-    //           <li key={index}>{platform.platform.name}</li> 
-    //        ))}
-    //        </div>
-    //       )
-    //    }
-    // }
+    check=()=>{
+        if(this.props.platforms != null )
+        {
+          return ( 
+            <div>
+           { this.props.platforms.map((platform, index) => (
+              <li key={index}>{platform.platform.name}</li> 
+           ))}
+           </div>
+          )
+       }
+    }
+
+    displayRatings = () => {
+        if(this.props.ratings != null ){
+          return(
+            <div>
+              {this.props.ratings.map((title, index) => (
+                <li key={index}>{title.title}</li>
+              ))}
+            </div>
+          )
+        }
+    }
+
     render(){
         console.log("i am in game")
         console.log(this.props.platforms)
+        if(this.props.released){
         return(
             <div>
                  {/* <p>Test for Game component</p> */}
-                 <table >
+                 <table class='game_table'>
                     <tbody>
                         {/* game component */}
                         <tr>
                             <td>
-                            {this.props.name}
-                            <p>{this.props.rating}</p>
-                            <p> { this.props.released}</p>
-                            {/* <img alt= "poster" width="185" src={this.props.result.poster_src}/> */}
+                                <p> Suggestions Counts: {this.props.suggestions}</p>
+                            </td>  
+                            <td>
+                                <th>Reviews:</th>
+                                <ul>{this.displayRatings()}</ul>
                             </td>
                             <td>
-                            {/* <h3>{this.props.key}</h3> */}
-                            {/* <p>Release Date: {this.props.result.released}</p> */}
-                            {/* <p>Rating: {this.props.rating} / 55</p> */}
-                            {/* <ul>{this.check()}</ul> */}
+                                <th>Platforms:</th>
+                                <ul>{this.check()}</ul>
                             </td>
                         </tr> 
                     </tbody>
                 </table>
             </div>
-        )   
+        )
+    }else{
+        return null;
+        
+    }
+
     }
 }
 export default Game;
