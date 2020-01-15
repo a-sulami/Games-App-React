@@ -59,13 +59,13 @@ class GamesRow extends React.Component{
 
         
           <div className='card' key={this.props.game.id}>
-            <h1 onClick={this.viewgame.bind(this)}>{this.props.game.name}</h1>
-            <img alt= "poster" src={this.props.game.poster_src}/>
-            <p>Release Date: {this.props.game.released}</p>
-            <p>Rating: {this.props.game.rating} / {this.props.game.rating_top}</p>
-            <Game key = {this.state.rows.id} released = {this.state.rows.released} top = {this.state.rows.toprating} name = {this.state.rows.name} platforms={this.state.rows.platforms} rating={this.state.rows.rating}/>
+            <img className='img22' alt= "poster" src={this.props.game.poster_src}/>
+            <h1 className='gamehead' onClick={this.viewgame.bind(this)}>{this.props.game.name}</h1>
+            <p><b>Release Date:</b> {this.props.game.released}</p>
+            <p><b>Rating:</b> {this.props.game.rating} / {this.props.game.rating_top}</p>
+            <p><b>platforms:</b>{this.check()}</p>
             <button onClick = {this.viewgame.bind(this)} >Game Info</button>
-            <ul>{this.check()}</ul>
+            <Game key = {this.state.rows.id} released = {this.state.rows.released} top = {this.state.rows.toprating} name = {this.state.rows.name} platforms={this.state.rows.platforms} rating={this.state.rows.rating}/>
           </div>
         
 
