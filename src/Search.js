@@ -51,15 +51,7 @@ class Search extends Component{
           <div>
             <table className = "titleBar">
               <tbody>
-                <tr>
-                  <td>
-                    <img alt="app icon" width="50" src="green_app_icon.svg"/>
-                  </td>
-                  <td width = "10"/>
-                  <td>
-                    <h1>gameDB Search</h1>
-                  </td>
-                </tr>
+                
               </tbody>
             </table>
     

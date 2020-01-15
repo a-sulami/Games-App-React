@@ -6,12 +6,13 @@ class Home extends Component{
     render(){
         return(
             <div>
-                 <p>Test for home component</p>
+
+             <p>Test for Home component</p>
+          
             </div>
         )
     }
 }
-
 
 
 export default Home;

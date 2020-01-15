@@ -1,0 +1,549 @@
+
+*:focus {
+  outline: none !important; }
+
+a:focus {
+  color: inherit;
+  outline: none;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none;
+  color: #061da4; }
+
+button, input[type="submit"] {
+  cursor: pointer; }
+
+ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0; }
+
+img {
+  max-width: 100%; }
+
+
+/*-- 
+    - Common Classes
+-----------------------------------------*/
+
+
+/*--
+    - Background Color
+------------------------------------------*/
+.bg-white {
+  background-color: #ffffff !important; }
+
+.bg-gray {
+  background-color: #f8f8f8 !important; }
+
+.bg-dark {
+  background-color: #252525 !important; }
+/*footer color*/
+.bg-theme {
+  background-color: #203737 !important; } 
+
+.bg-black {
+  background-color: #081b1f !important; }
+
+
+
+
+
+/*-- Page Banner --*/
+.logo{
+    width:120px;
+    margin-top: -40px;
+  
+}
+.page-banner-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 560px;
+  position: relative; }
+  .page-banner-area::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: #000000;
+    opacity: 0.4; }
+  @media only screen and (min-width: 1200px) and (max-width: 1499px) {
+    .page-banner-area {
+      height: 460px; } }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .page-banner-area {
+      height: 360px; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .page-banner-area {
+      height: 260px; } }
+  @media only screen and (max-width: 767px) {
+    .page-banner-area {
+      height: 220px; } }
+  .page-banner-area .page-content {
+    position: relative; }
+    .page-banner-area .page-content h1 {
+      font-size: 75px;
+      line-height: 75px;
+      font-weight: 300;
+      font-family: "Bauhaus 93";
+      color: #ffffff;
+      text-shadow: -6px 4px 1px #252525; }
+      @media only screen and (min-width: 1200px) and (max-width: 1499px) {
+        .page-banner-area .page-content h1 {
+          font-size: 60px;
+          line-height: 60px; } }
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .page-banner-area .page-content h1 {
+          font-size: 50px;
+          line-height: 50px; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .page-banner-area .page-content h1 {
+          font-size: 40px;
+          line-height: 40px; } }
+      @media only screen and (max-width: 767px) {
+        .page-banner-area .page-content h1 {
+          font-size: 28px;
+          line-height: 30px; } }
+    .page-banner-area .page-content a.df-btn {
+      background-color: #ffffff;
+      font-size: 20px;
+      color: #151515;
+      border-radius: 50px;
+      margin-top: 30px;
+      line-height: 25px; }
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .page-banner-area .page-content a.df-btn {
+          font-size: 18px; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .page-banner-area .page-content a.df-btn {
+          font-size: 16px;
+          margin-top: 15px; } }
+      @media only screen and (max-width: 767px) {
+        .page-banner-area .page-content a.df-btn {
+          font-size: 14px;
+          margin-top: 10px; } }
+
+
+
+/*-- Header Search --*/
+.header-right-wrap ul {
+  text-align: right; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-right-wrap ul {
+      text-align: center; } }
+  @media only screen and (max-width: 767px) {
+    .header-right-wrap ul {
+      text-align: left; } }
+  .header-right-wrap ul li {
+    display: inline-block;
+    margin-right: 25px; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .header-right-wrap ul li {
+        margin-right: 10px; } }
+    .header-right-wrap ul li:last-child {
+      margin-right: 0; }
+    .header-right-wrap ul li a {
+      font-size: 20px;
+      line-height: 30px;
+      display: block;
+      padding: 30px 0;
+      font-family: "Qanto";
+      color: #9f9f9f; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .header-right-wrap ul li a {
+          padding: 20px 0; } }
+      @media only screen and (max-width: 767px) {
+        .header-right-wrap ul li a {
+          padding: 20px 0; } }
+      .header-right-wrap ul li a:hover {
+        color: #ffffff; }
+
+
+/*-- Main Menu --*/
+.main-menu.menu-style-2 ul li a {
+  line-height: 30px; }
+
+.main-menu > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .main-menu > ul > li {
+    margin-right: 65px;
+    position: relative; }
+    @media only screen and (min-width: 1200px) and (max-width: 1499px) {
+      .main-menu > ul > li {
+        margin-right: 40px; } }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .main-menu > ul > li {
+        margin-right: 20px; } }
+    .main-menu > ul > li:last-child {
+      margin-right: 0; }
+    .main-menu > ul > li > a {
+      font-size: 20px;
+      line-height: 70px;
+      font-weight: 400;
+      letter-spacing: 0.25px;
+      font-family: "Qanto";
+      color: #ffffff;
+      display: block;
+      padding: 30px 0;
+      position: relative;
+      text-transform: capitalize; }
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .main-menu > ul > li > a {
+          line-height: 30px; } }
+    .main-menu > ul > li.has-dropdown > a::after {
+      content: "\f107";
+      font-family: Fontawesome;
+      line-height: 30px;
+      margin-left: 3px; }
+    .main-menu > ul > li.active > a, .main-menu > ul > li:hover > a {
+      color: #f64140; }
+    .main-menu > ul > li:hover > .sub-menu {
+      margin-top: 0;
+      opacity: 1;
+      visibility: visible;
+      z-index: 99; }
+    .main-menu > ul > li:hover > .mega-menu {
+      margin-top: 0;
+      opacity: 1;
+      visibility: visible;
+      z-index: 99; }
+    .main-menu > ul > li:last-child .sub-menu {
+      left: auto;
+      right: 0; }
+      .main-menu > ul > li:last-child .sub-menu .sub-menu .sub-menu {
+        left: 100%;
+        right: auto; }
+        .main-menu > ul > li:last-child .sub-menu .sub-menu .sub-menu .sub-menu {
+          left: auto;
+          right: 100%; }
+    .main-menu > ul > li:nth-last-child(-n+3) .sub-menu .sub-menu {
+      left: auto;
+      right: 100%; }
+      .main-menu > ul > li:nth-last-child(-n+3) .sub-menu .sub-menu .sub-menu {
+        left: 100%;
+        right: auto; }
+
+/*-- Sub Menu --*/
+.sub-menu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  margin-left: -20px;
+  margin-top: 30px;
+  padding: 20px 0;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 210px;
+  z-index: -99;
+  opacity: 0;
+  visibility: hidden; }
+  .sub-menu li {
+    margin-bottom: 5px;
+    position: relative; }
+    .sub-menu li:last-child {
+      margin-bottom: 0; }
+    .sub-menu li a {
+      letter-spacing: 0.25px;
+      font-family: "Qanto";
+      color: #151515;
+      display: block;
+      font-size: 14px;
+      line-height: 30px;
+      font-weight: 400;
+      padding: 0 20px; }
+    .sub-menu li.has-dropdown > a::after {
+      content: "\f105";
+      font-family: Fontawesome;
+      line-height: 30px;
+      float: right; }
+    .sub-menu li.active > a {
+      color: #f64140; }
+    .sub-menu li .sub-menu {
+      left: 100%;
+      top: 0;
+      margin-left: 0; }
+    .sub-menu li:hover > a {
+      color: #f64140;
+      padding-left: 25px; }
+    .sub-menu li:hover > .sub-menu {
+      margin-top: -10px;
+      opacity: 1;
+      visibility: visible;
+      z-index: 99; }
+    .sub-menu li .sub-menu {
+      left: 100%;
+      margin-left: 0;
+      top: 0; }
+      .sub-menu li .sub-menu .sub-menu {
+        left: auto;
+        right: 100%; }
+        .sub-menu li .sub-menu .sub-menu .sub-menu {
+          left: 100%;
+          right: auto; }
+
+/*----------------------------------------*/
+/*  19. Footer CSS
+/*----------------------------------------*/
+.footer-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  z-index: 1; }
+  .footer-section.style-2::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: #000000;
+    opacity: 0.5;
+    z-index: -1; }
+
+
+/*-- Footer Widget --*/
+@media only screen and (max-width: 767px) {
+  .footer-widget {
+    text-align: center; } }
+
+.footer-widget .footer-nav ul {
+  text-align: center; }
+  @media only screen and (max-width: 767px) {
+    .footer-widget .footer-nav ul {
+      margin: 20px 0;
+      margin-bottom: 10px; } }
+  .footer-widget .footer-nav ul li {
+    display: inline-block;
+    margin-right: 50px; }
+    @media only screen and (min-width: 1200px) and (max-width: 1499px) {
+      .footer-widget .footer-nav ul li {
+        margin-right: 30px; } }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .footer-widget .footer-nav ul li {
+        margin-right: 30px; } }
+    @media only screen and (max-width: 767px) {
+      .footer-widget .footer-nav ul li {
+        margin-right: 10px; } }
+    .footer-widget .footer-nav ul li:last-child {
+      margin-right: 0; }
+    .footer-widget .footer-nav ul li a {
+      font-size: 18px;
+      line-height: 26px;
+      color: #ffffff;
+      display: block;
+      font-family: "Qanto"; }
+      .footer-widget .footer-nav ul li a:hover {
+        color: #f64140; }
+
+/*-- Footer Social --*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer-social {
+    text-align: center;
+    margin: 30px 0; } }
+
+.footer-social span {
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+  font-family: "Qanto";
+  margin-right: 30px; }
+  @media only screen and (min-width: 1200px) and (max-width: 1499px) {
+    .footer-social span {
+      margin-right: 17px; } }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .footer-social span {
+      margin-right: 10px; } }
+  @media only screen and (max-width: 767px) {
+    .footer-social span {
+      margin-right: 0px;
+      margin-bottom: 10px;
+      display: block; } }
+
+.footer-social ul {
+  display: inline-block; }
+  .footer-social ul li {
+    display: inline-block;
+    margin-right: 40px; }
+    @media only screen and (min-width: 1200px) and (max-width: 1499px) {
+      .footer-social ul li {
+        margin-right: 20px; } }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .footer-social ul li {
+        margin-right: 20px; } }
+    .footer-social ul li:last-child {
+      margin-right: 0; }
+    .footer-social ul li a {
+      font-size: 18px;
+      line-height: 26px;
+      color: #ffffff;
+      display: block; }
+      .footer-social ul li a:hover {
+        color: #f64140; }
+
+
+/*-- Footer Bottom --*/
+.footer-bottom {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  border-top: 1px solid #5e6bb7; }
+  .footer-bottom.border-color {
+    border-color: #6c7676; }
+  @media only screen and (max-width: 767px) {
+    .footer-bottom {
+      padding: 15px 0; } }
+
+/*-- Copyright --*/
+.copyright p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #d8d8d8;
+  font-weight: 300;
+  color: #c4c2c2; }
+  @media only screen and (max-width: 767px) {
+    .copyright p {
+      font-size: 13px; } }
+  .copyright p a:hover {
+    color: #f64140; }
+
+
+.mt-20 {
+  margin-top: 20px !important; }
+
+
+.mb-20 {
+  margin-bottom: 20px !important; }
+
+.pt-175 {
+  padding-top: 175px !important; }
+
+.pb-80 {
+  padding-bottom: 80px !important; }
+  
+  
+@media only screen and (min-width: 1200px) and (max-width: 1499px) {
+  .pt-lg-150 {
+    padding-top: 150px !important; } }
+  
+  
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .pt-md-125 {
+    padding-top: 125px !important; } }
+    
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .pt-sm-110 {
+    padding-top: 110px !important; } }
+    
+
+@media only screen and (max-width: 767px) {
+  .pt-xs-40 {
+    padding-top: 40px !important; } }
+
+@media only screen and (min-width: 1200px) and (max-width: 1499px) {
+  .pb-lg-70 {
+    padding-bottom: 70px !important; } }
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .pb-md-60 {
+    padding-bottom: 60px !important; } }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .pb-sm-15 {
+    padding-bottom: 15px !important; } }
+
+@media only screen and (max-width: 767px) {
+  .pb-xs-40 {
+    padding-bottom: 40px !important; } }
+
+/*Fonts*/
+@font-face {
+    font-family: 'Bauhaus 93';
+    src: url('../fonts/bauhaus93/Bauhaus93.eot');
+    src: url('../fonts/bauhaus93/Bauhaus93.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/bauhaus93/Bauhaus93.woff2') format('woff2'),
+        url('../fonts/bauhaus93/Bauhaus93.woff') format('woff'),
+        url('../fonts/bauhaus93/Bauhaus93.ttf') format('truetype'),
+        url('../fonts/bauhaus93/Bauhaus93.svg#Bauhaus93') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Qanto';
+    src: url('../fonts/qanto/Qanto.eot');
+    src: url('../fonts/qanto/Qanto.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/qanto/Qanto.woff2') format('woff2'),
+        url('../fonts/qanto/Qanto.woff') format('woff'),
+        url('../fonts/qanto/Qanto.ttf') format('truetype'),
+        url('../fonts/qanto/Qanto.svg#Qanto') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Qanto';
+    src: url('../fonts/qanto/Qanto_1.eot');
+    src: url('../fonts/qanto/Qanto_1.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/qanto/Qanto_1.woff2') format('woff2'),
+        url('../fonts/qanto/Qanto_1.woff') format('woff'),
+        url('../fonts/qanto/Qanto_1.ttf') format('truetype'),
+        url('../fonts/qanto/Qanto_1.svg#Qanto') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Qanto';
+    src: url('../fonts/qanto/Qanto_2.eot');
+    src: url('../fonts/qanto/Qanto_2.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/qanto/Qanto_2.woff2') format('woff2'),
+        url('../fonts/qanto/Qanto_2.woff') format('woff'),
+        url('../fonts/qanto/Qanto_2.ttf') format('truetype'),
+        url('../fonts/qanto/Qanto_2.svg#Qanto') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Qanto';
+    src: url('../fonts/qanto/Qanto_3.eot');
+    src: url('../fonts/qanto/Qanto_3.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/qanto/Qanto_3.woff2') format('woff2'),
+        url('../fonts/qanto/Qanto_3.woff') format('woff'),
+        url('../fonts/qanto/Qanto_3.ttf') format('truetype'),
+        url('../fonts/qanto/Qanto_3.svg#Qanto') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+a:hover, a:visited, a:link, a:active {
+
+    text-decoration: none!important;
+
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+
+
+
