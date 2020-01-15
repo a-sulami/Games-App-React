@@ -22,6 +22,7 @@ class Game extends Component{
     render(){
         console.log("i am in game")
         console.log(this.props.platforms)
+        if(this.props.released){
         return(
             <div>
                  {/* <p>Test for Game component</p> */}
@@ -30,9 +31,9 @@ class Game extends Component{
                         {/* game component */}
                         <tr>
                             <td>
-                            {this.props.name}
-                            <p>{this.props.rating}</p>
-                            <p> { this.props.released || <span>Released:</span>}</p>
+                             <p> Name :{this.props.name}</p>
+                            <p> Rating :{this.props.rating}</p>
+                            <p> released: { this.props.released} </p>
                             {/* <img alt= "poster" width="185" src={this.props.result.poster_src}/> */}
                             </td>
                             <td>
@@ -45,7 +46,12 @@ class Game extends Component{
                     </tbody>
                 </table>
             </div>
-        )   
+        )
+    }else{
+        return null;
+        
+    }
+
     }
 }
 export default Game;
