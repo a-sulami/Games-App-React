@@ -7,28 +7,17 @@ class Game extends Component{
           //gameInfo: []//differ
         }
       }
-    // check=()=>{
-    //     if(this.props.platforms != null )
-    //     {
-    //       return ( 
-    //         <div>
-    //        { this.props.platforms.map((platform, index) => (
-    //           <li key={index}>{platform.platform.name}</li> 
-    //        ))}
-    //        </div>
-    //       )
-    //    }
-    // }
+
     render(){
         console.log("i am in game")
         console.log(this.props.platforms)
         if(this.props.released){
         return(
             <div>
-                 {/* <p>Test for Game component</p> */}
+            
                  <table >
                     <tbody>
-                        {/* game component */}
+                      
                         <tr>
                             <td>
                              <p> Name :{this.props.name}</p>

@@ -6,9 +6,9 @@ class Contact extends Component {
             <div className='container1'>
                 
                 <div className='card'>
-                    <h1 class="h12">Abdurrahman Al-Sulamy</h1>
+                    <h1 class="h12">Abdurrahman Al-Sulami</h1>
                     <p>Team Leader</p>
-                    <p>E-Mail: </p>
+                    <p>E-Mail: a.sulami96@gmail.com</p>
                 </div>
                 
                 <div className='card'>
