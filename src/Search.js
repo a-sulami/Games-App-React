@@ -6,10 +6,12 @@ import $ from 'jquery'
 class Search extends Component{
     constructor(props){
         super(props);
-        this.state = {}
+        this.state = {
+            performSearch : ""
+        }
         
     
-        this.performSearch("")
+        // this.performSearch("")
       }
     
       performSearch(searchTerm){
