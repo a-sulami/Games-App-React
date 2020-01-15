@@ -49,16 +49,16 @@ class Games extends Component{
 
   render(){
     return(
-      <div>
-        <table className = "titleBar">
+      <div class = "container mt-5">
+        {/* <table className = "titleBar">
           <tbody>
           </tbody>
-        </table>
+        </table> */}
 
 
-
+        <div class = "row cardBody py-5 mt-5">
         {this.state.rows}
-
+        </div>
       </div>
     )
   }
