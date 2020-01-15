@@ -23,7 +23,7 @@ class Header extends Component{
                                
                                 <div class="col-12 col-md-3 col-lg-3 order-md-1 order-lg-1 mt-20 mb-20">
                                     <div class="logo">
-                                        <a href="#"><img src="gaming-logo-png-12.svg" alt=""/></a>
+                                        <a href="/"><img src="gaming-logo-png-12.svg" alt=""/></a>
                                     </div>
                                 </div>
                               
@@ -40,6 +40,7 @@ class Header extends Component{
                                                     <li><a href="games-details.html">Games Details</a></li>
                                                 </ul>
                                             </li>
+                                            <li><a href='/search'>Search</a></li>
                                             <li><a href='/contact'>About</a></li>
                                         </ul>
                                     </nav>
