@@ -32,7 +32,7 @@ class Game extends Component{
                             <td>
                             {this.props.name}
                             <p>{this.props.rating}</p>
-                            <p> { this.props.released || <span>Released:</span>}</p>
+                            <p> { this.props.released}</p>
                             {/* <img alt= "poster" width="185" src={this.props.result.poster_src}/> */}
                             </td>
                             <td>

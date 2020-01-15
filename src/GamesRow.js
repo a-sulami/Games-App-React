@@ -70,7 +70,7 @@ class GamesRow extends React.Component{
 
             <button onClick = {this.viewgame.bind(this)} >View</button>
               <div> 
-              <Game key = {this.state.rows.id} released = {this.state.rows.released} top = {this.state.rows.toprating} name = {this.state.rows.name} platforms={this.state.rows.platforms} rating={this.state.rows.rating}/>
+              <Game key = {this.state.rows.id} released = {<p>hello</p>&&this.state.rows.released} top = {this.state.rows.toprating} name = {this.state.rows.name} platforms={this.state.rows.platforms} rating={this.state.rows.rating}/>
               </div>
 
           </td>
