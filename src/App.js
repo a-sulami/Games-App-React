@@ -4,6 +4,7 @@ import Home from './Home';
 import Games from './Games';
 import Game from './Game';
 import Contact from './Contact';
+import Search from './Search'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Contact></Contact>
         <Games></Games>
         <Game></Game>
+        <Search></Search>
     </div>
   );
 }

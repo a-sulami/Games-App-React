@@ -3,7 +3,8 @@ import React from 'react'
 class GamesRow extends React.Component{
     viewgame(){
         const url = "https://api.rawg.io/api/games/" + this.props.game.id
-        window.location.href = url
+      
+       console.log("Hii");
     }
 
      check=()=>{
