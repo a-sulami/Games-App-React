@@ -1,7 +1,7 @@
 ![MiSK Academy | GA](GM.png)
-# APPNAME
+# GG
 ## Introduction:
-The APPNAME it is about displaying games informations.
+The GG it is about displaying games informations.
 ![Screen Shot](filename)
 ---
 ## List of used technologies:
@@ -32,4 +32,4 @@ CONTACT Page
 4. Faisal Al-Sulaimani.
 ---
 ## Acknowledgments:
-APPNAME project was developed while taking GA | MiSK Academy ( Software Engineering Immersive Course ) at Effat University.
+GG project was developed while taking GA | MiSK Academy ( Software Engineering Immersive Course ) at Effat University.
