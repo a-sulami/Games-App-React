@@ -6,7 +6,9 @@ import $ from 'jquery'
 class Games extends Component{
   constructor(props){
     super(props);
-    this.state = {}
+    this.state = {
+        rows: []
+    }
     
 
     this.performSearch("")
@@ -26,6 +28,7 @@ class Games extends Component{
           // console.log(game.poster_path)
           const gameRow = <GamesRow key = {game.id} game = {game} platforms={game.platforms}/>
           gameRows.push(gameRow)
+          console.log(gameRows)
           
         })
 
