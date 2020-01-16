@@ -44,7 +44,7 @@ class Game extends Component{
                     <tbody>
                       
                         <tr>
-                            <td>
+                            <td className= "g1">
                                 <th> Suggestions Counts: {this.props.suggestions}</th>
                                 
                                 <ul><th>Reviews:</th>{this.displayRatings()}</ul>
