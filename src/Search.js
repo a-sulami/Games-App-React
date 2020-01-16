@@ -63,9 +63,11 @@ class Search extends Component{
               paddingBottom: 8,
               paddingLeft: 16
             }} onChange={this.searchChangeHandler.bind(this)} placeholder="Enter Search term"/>
-    
+                 <div class ="container mt-5">
+                      <div class = "row cardBody py-5 mt-5">
             {this.state.rows}
-    
+                       </div>
+                  </div>
           </div>
         )
       }
