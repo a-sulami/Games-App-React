@@ -8,29 +8,48 @@ class Game extends Component{
         }
       }
 
+      check=()=>{
+        if(this.props.platforms != null )
+        {
+          return ( 
+            <div>
+           { this.props.platforms.map((platform, index) => (
+              <li key={index}>{platform.platform.name}</li> 
+           ))}
+           </div>
+          )
+       }
+    }
+
+    displayRatings = () => {
+        if(this.props.ratings != null ){
+          return(
+            <div>
+              {this.props.ratings.map((title, index) => (
+                <li key={index}>{title.title}</li>
+              ))}
+            </div>
+          )
+        }
+    }
+
     render(){
         console.log("i am in game")
         console.log(this.props.platforms)
         if(this.props.released){
         return(
             <div>
-            
-                 <table >
+            <table class='game_table'>
+
                     <tbody>
                       
                         <tr>
                             <td>
-                             <p> Name :{this.props.name}</p>
-                            <p> Rating :{this.props.rating}</p>
-                            <p> released: {this.props.released} </p>
-               
-                            {/* <img alt= "poster" width="185" src={this.props.result.poster_src}/> */}
-                            </td>
-                            <td>
-                            {/* <h3>{this.props.key}</h3> */}
-                            {/* <p>Release Date: {this.props.result.released}</p> */}
-                            {/* <p>Rating: {this.props.rating} / 55</p> */}
-                            {/* <ul>{this.check()}</ul> */}
+                                <th> Suggestions Counts: {this.props.suggestions}</th>
+                                
+                                <ul><th>Reviews:</th>{this.displayRatings()}</ul>
+                                <th>Platforms:</th>
+                                <ul>{this.check()}</ul>
                             </td>
                         </tr> 
                     </tbody>

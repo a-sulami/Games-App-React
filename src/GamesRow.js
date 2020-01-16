@@ -41,18 +41,6 @@ class GamesRow extends React.Component{
       })
     }
     
-   check=()=>{
-       if(this.props.platforms != null )
-       {
-         return ( 
-           <div>
-          { this.props.platforms.map((platform, index) => (
-             <li key={index}>{platform.platform.name}</li> 
-          ))}
-          </div>
-         )
-      }
-   }
   render(){
    console.log(this.state.rows)
       return (
@@ -63,10 +51,9 @@ class GamesRow extends React.Component{
             <h1 className='gamehead' onClick={this.viewgame.bind(this)}>{this.props.game.name}</h1>
             <p><b>Release Date:</b> {this.props.game.released}</p>
             <p><b>Rating:</b> {this.props.game.rating} / {this.props.game.rating_top}</p>
-            <p><b>platforms:</b>{this.check()}</p>
             <button onClick = {this.viewgame.bind(this)} >Game Info</button>
-            <Game key = {this.state.rows.id} released = {this.state.rows.released} top = {this.state.rows.toprating} name = {this.state.rows.name} platforms={this.state.rows.platforms} rating={this.state.rows.rating}/>
-          </div>
+            <Game key = {this.state.rows.id} platforms = {this.state.rows.platforms} ratings = {this.state.rows.ratings} suggestions={this.state.rows.suggestions_count} released = {this.state.rows.released} top = {this.state.rows.toprating} name = {this.state.rows.name} platforms={this.state.rows.platforms} rating={this.state.rows.rating}/>
+            </div>
         
 
 

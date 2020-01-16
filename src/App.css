@@ -89,7 +89,7 @@ html {
 } */
 
 p {
-  padding-left: 2.5rem;
+  padding: 0 2.5rem 2.5rem;
   margin: 0;
 }
 
@@ -100,13 +100,11 @@ p {
 
 .card {
   margin: 1rem;
+  background: white;
   box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
   border-radius: 12px;
   overflow: hidden;
   transition: all .2s linear;
-  color: #215c6e;
-  font-family: "Times";
-  font-size: 18px;
 }
 
 
@@ -173,11 +171,4 @@ a:active {color:#fff;}
 }
 img{
   border-radius: 10px;
-}
-.img22{
-  height: 280px;
-}
-.gamehead{
-  text-align: center;
-  color: #494b4e;
 }
