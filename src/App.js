@@ -6,7 +6,6 @@ import GamesRow from './GamesRow';
 import Game from './Game';
 import Contact from './Contact';
 
-
 import Header from './Header';
 import Footer from './Footer';
 import Search from './Search';
