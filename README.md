@@ -2,7 +2,7 @@
 # GG
 ## Introduction:
 The GG it is about displaying games informations.
-![Screen Shot](filename)
+![Screen Shot](screenShot.png)
 ---
 ## List of used technologies:
 * Visual Studio Code.
@@ -20,9 +20,9 @@ User can navigate the website and search for games.
 HOME Page
 ![Home Page](homePage.png)
 SEARCH Page
-![Search Page](searchPage.png)
+![Search Page](SP.png)
 CONTACT Page
-![AboutUs Page](aboutUs.png)
+![AboutUs Page](CU.png)
 ---
 ## Done by:
 * AMIGOS TEAM
